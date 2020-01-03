@@ -19,6 +19,6 @@ app.use(express.json())
 app.use(cors())
 
 // Routes
-app.use('/api/v1', require('./routes/stores'))
+app.use('/api/v1', require('./routes/positions'))
 
 app.listen(PORT, () => console.info(`server running in ${NODE_ENV} on port ${PORT}`))
